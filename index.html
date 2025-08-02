@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>I.A.R.A IA 2025 - Sessões Automatizadas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: black;
+      color: #00ffe0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .botao {
+      background-color: #00ffe0;
+      color: black;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>I.A.R.A IA 2025 - Sessões Premium</h1>
+  <p>Sessão automatizada em andamento...</p>
+
+  <!-- Botão para iniciar sessão -->
+  <button class="botao" onclick="startIA()">Iniciar I.A.R.A Sessão</button>
+
+  <script>
+    let sessionCount = 1;
+    function startIA() {
+      alert('Sessão ' + sessionCount + ' iniciada.');
+      setTimeout(() => {
+        alert('Sessão em andamento...');
+      }, 10000);
+      setTimeout(() => {
+        alert('Sessão em execução contínua...');
+      }, 20000);
+      setTimeout(() => {
+        alert('Sessão quase finalizada...');
+      }, 30000);
+      setTimeout(() => {
+        location.reload();
+      }, 300000); // 5 minutos
+    }
+  </script>
+
+</body>
+</html>
